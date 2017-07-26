@@ -1,10 +1,50 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import Draggable from 'react-draggable';
+
+import './SwiperView.css';
+
+class Doggy extends Component {
+  render() {
+    return (
+      <Draggable
+        handle=".handle"
+        defaultPosition={{x: 0, y: 0}}
+        id="container"
+      >
+        <div className="handle"
+          style={{
+            height:this.props.height,
+            width:this.props.width,
+          }}
+        >
+          <div id="infoi" >
+            <h2>{this.props.text}</h2>
+            <div
+              style={{
+                width:"100%",
+                height:"100%",
+                "background-image": "url("+this.props.img+")",
+                "background-repeat": "no-repeat"
+              }}
+            />
+          </div>
+        </div>
+      </Draggable>
+    )
+  }
+}
 
 class SwiperView extends Component {
   render() {
     return (
-      <div>Swipe things here</div>
+      <div>
+        <Doggy text="Rex"
+           img="./profiles/dogm1.jpg"
+           height={"500px"}
+           width={"400px"}
+        />
+      </div>
     );
   }
 }
