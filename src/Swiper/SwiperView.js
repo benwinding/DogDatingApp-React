@@ -9,12 +9,16 @@ class Doggy extends Component {
       <Draggable
         handle=".handle"
         defaultPosition={{x: 0, y: 0}}
+        position={null}
         id="container"
       >
         <div className="handle"
           style={{
+            position:"absolute",
+            left:"23vw",
             height:this.props.height,
             width:this.props.width,
+            zIndex:this.props.z,
           }}
         >
           <div id="infoi" >
@@ -38,11 +42,10 @@ class SwiperView extends Component {
   render() {
     return (
       <div>
-        <Doggy text="Rex"
-           img="./profiles/dogm1.jpg"
-           height={"500px"}
-           width={"400px"}
-        />
+        <Doggy z={1} text="Rex" img="./profiles/dogm1.jpg" height={"500px"} width={"400px"} />
+        <Doggy z={2} text="Frank" img="./profiles/dogm2.jpg" height={"500px"} width={"400px"} />
+        <Doggy z={3} text="Bob" img="./profiles/dogm3.jpg" height={"500px"} width={"400px"} />
+        <Doggy z={4} text="Brian" img="./profiles/dogm4.jpg" height={"500px"} width={"400px"} />
       </div>
     );
   }
