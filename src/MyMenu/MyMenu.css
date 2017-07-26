@@ -28,6 +28,7 @@
 .bm-cross-button {
   right: 58px !important;
 }
+
 .bm-morph-shape {
   right: 50px;
 }
@@ -78,4 +79,8 @@ a {
   margin-left: 10px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.bm-item-list {
+  text-align: left;
 }

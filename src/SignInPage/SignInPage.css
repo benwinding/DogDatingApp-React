@@ -1,3 +1,11 @@
+.Signin-logo {
+    padding-bottom:10px;
+}
+
+.Signin-logo img {
+    height: 160px;
+}
+
 .vid-info button {
     font-family: Arial, serif !important;
 }
