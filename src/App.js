@@ -1,22 +1,27 @@
 import React, { Component } from 'react';
-import logo from './boner.png';
 import './App.css';
-import MapsView from "./DogParks/MapsView";
+import GoogleLogin from "react-google-login";
+import Center from 'react-center';
 
-class App extends Component {
+const responseGoogle = (response) => {
+  console.log(response);
+};
+
+export default class App extends Component {
   render() {
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <p className="App-intro">
-          Boner is a dating app for dogs!
-        </p>
-        <MapsView/>
+      <div className="Login-screen">
+        <Center
+          style={{width:"100vw", height:"100vh"}}>
+          <GoogleLogin
+            clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+            buttonText="Google"
+            onSuccess={responseGoogle}
+            onFailure={responseGoogle}
+          />
+        </Center>
       </div>
     );
   }
 }
-
-export default App;

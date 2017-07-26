@@ -7,7 +7,9 @@
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-burger-menu": "^2.1.4",
+    "react-center": "^1.1.1",
     "react-dom": "^15.6.1",
+    "react-google-login": "^2.9.2",
     "react-scripts": "1.0.10"
   },
   "homepage": "https://benwinding.github.io/DogDatingApp-React",
