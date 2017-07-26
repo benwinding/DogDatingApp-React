@@ -29,6 +29,7 @@ class MyMenu extends Component {
         <MyMenuItem fa="fa-sign-in" menuHref="#/" menuName="Sign In" />
         <MyMenuItem fa="fa-user-circle-o" menuHref="#/profile" menuName="Profile" />
         <MyMenuItem fa="fa-map" menuHref="#/map" menuName="Map" />
+        <MyMenuItem fa="fa-heart" menuHref="#/swiper" menuName="Swipe" />
       </Menu>
     );
   }
