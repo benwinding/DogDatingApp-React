@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-import SignInPage from "./SignInPage/SignInPage";
-import PuppyProfile from "./ProfileCreator/PuppyProfile";
+import MyMenu from "./MyMenu/MyMenu";
+import MyMenuRoutes from "./MyMenu/MyMenuRoutes";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        {/*<SignInPage/>*/}
-        <PuppyProfile/>
+        <MyMenu />
+        <MyMenuRoutes />
       </div>
     );
   }
