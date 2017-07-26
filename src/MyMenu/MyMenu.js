@@ -6,7 +6,7 @@ import 'font-awesome/css/font-awesome.css';
 class MyMenuItem extends Component {
   render() {
     return (
-      <div className="menuItem">
+      <div>
         <a
           id={this.props.menuId}
           href={this.props.menuHref} >
