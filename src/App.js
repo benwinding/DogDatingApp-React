@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import GoogleLogin from "react-google-login";
-import Center from 'react-center';
+import logo from './boner.png';
 
 const responseGoogle = (response) => {
   console.log(response);
@@ -26,9 +26,12 @@ export default class App extends Component {
         <div id="vidtop-content">
           <div className="vid-info">
             <div className="Login-screen">
+              <div style={{"padding-bottom":10}}>
+                <img src={logo} className="App-logo" alt="logo" />
+              </div>
               <GoogleLogin
                 clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-                buttonText="Google"
+                buttonText="Google Sign In"
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}
               />

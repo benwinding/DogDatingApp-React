@@ -39,7 +39,7 @@
 #vidtop-content {
   position: relative;
   top: 50%;
-  transform: translateY(50vh);
+  transform: translateY(30vh);
   text-align: center;
 }
 @media (min-aspect-ratio: 21/9) {
