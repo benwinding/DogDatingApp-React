@@ -6,6 +6,7 @@
     "google-map-react": "^0.24.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.1",
     "react-burger-menu": "^2.1.4",
     "react-center": "^1.1.1",
     "react-dom": "^15.6.1",

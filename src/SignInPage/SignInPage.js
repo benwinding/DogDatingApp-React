@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GoogleLogin from "react-google-login";
-import logo from './boner.png';
+import logo from '../boner.png';
+import './SignInPage.css';
 
 const responseGoogle = (response) => {
   console.log(response);
@@ -17,7 +18,7 @@ export default class SignInPage extends Component {
               src={youTubeString}
               frameborder="0"
               allowfullscreen
-            ></iframe>
+            />
           </div>
         </div>
 
