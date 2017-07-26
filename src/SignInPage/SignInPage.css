@@ -6,6 +6,11 @@
     height: 160px;
 }
 
+.Signin-desc {
+    padding-bottom:10px;
+    color: #eeeeee;
+}
+
 .vid-info button {
     font-family: Arial, serif !important;
     background: #e6542f !important;
