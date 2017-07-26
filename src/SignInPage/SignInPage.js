@@ -18,6 +18,7 @@ export default class SignInPage extends Component {
               src={youTubeString}
               allowFullScreen
               frameBorder={0}
+              title={"The video in background"}
             />
           </div>
         </div>

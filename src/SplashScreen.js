@@ -16,5 +16,4 @@ class AppSplashScreen extends Component {
   }
 }
 
-AppSplashScreen.propTypes = {};
-AppSplashScreen.defaultProps = {};
+export default AppSplashScreen;

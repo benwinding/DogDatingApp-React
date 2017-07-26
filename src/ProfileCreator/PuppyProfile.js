@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import {ControlLabel, FormControl, FormGroup,
   Radio, Button} from 'react-bootstrap';
 
@@ -23,7 +22,7 @@ class PuppyProfile extends Component {
       <div>
         <div className="form-background">
           <div className="form-foreground">
-            <img src={background}/>
+            <img src={background} alt="not sure"/>
           </div>
         </div>
         <div className="form-content">
@@ -79,8 +78,5 @@ class PuppyProfile extends Component {
     );
   }
 }
-
-PuppyProfile.propTypes = {};
-PuppyProfile.defaultProps = {};
 
 export default PuppyProfile;

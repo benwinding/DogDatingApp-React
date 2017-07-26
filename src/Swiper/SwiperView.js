@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import Draggable from 'react-draggable';
 
 import './SwiperView.css';
@@ -24,8 +23,8 @@ class Doggy extends Component {
               style={{
                 width:"100%",
                 height:"100%",
-                "background-image": "url("+this.props.img+")",
-                "background-repeat": "no-repeat"
+                "backgroundImage": "url("+this.props.img+")",
+                "backgroundRepeat": "no-repeat"
               }}
             />
           </div>

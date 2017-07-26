@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom'
 import SignInPage from "../SignInPage/SignInPage";
 import PuppyProfile from "../ProfileCreator/PuppyProfile";
@@ -20,8 +19,5 @@ class MyMenuRoutes extends Component {
     );
   }
 }
-
-MyMenuRoutes.propTypes = {};
-MyMenuRoutes.defaultProps = {};
 
 export default MyMenuRoutes;
