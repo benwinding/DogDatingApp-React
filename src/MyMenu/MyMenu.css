@@ -11,7 +11,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: grey;
+  background: #e6542f;
 }
 
 /* Position and sizing of clickable cross button */
@@ -65,7 +65,7 @@ a:hover,
 a:focus,
 .menu-item:hover,
 .menu-item:focus {
-  color: #c94e50;
+  color: #e6542f;
   text-decoration: none;
 }
 
