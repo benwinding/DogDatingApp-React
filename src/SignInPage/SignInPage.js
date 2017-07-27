@@ -24,7 +24,7 @@ export default class SignInPage extends Component {
     let gif = (
       <div className="video-foreground" id="vid-gif">
         <img
-          src="/backgrounds/dogs.gif"
+          src="./backgrounds/dogs.gif"
           alt={"The video in background"}
         />
       </div>);
