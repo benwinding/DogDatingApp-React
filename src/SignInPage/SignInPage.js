@@ -43,7 +43,7 @@ export default class SignInPage extends Component {
     if(md.tablet())
       return this.GetGif();
     else
-      return this.GetYoutube();
+      return this.GetGif();
   }
 
   static GetGif() {
