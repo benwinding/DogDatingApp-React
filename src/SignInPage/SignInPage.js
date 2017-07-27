@@ -2,25 +2,44 @@ import React, { Component } from 'react';
 import GoogleLogin from "react-google-login";
 import logo from '../boner-logo.svg';
 import './SignInPage.css';
+import MobileDetect from 'mobile-detect';
 
 const responseGoogle = (response) => {
   console.log(response);
 };
 
 export default class SignInPage extends Component {
+  static GetBackgroundClip() {
+    let youtube = (
+      <div className="video-foreground" id="vid-yt">
+        <iframe
+          className="vid-yt"
+          src={"https://www.youtube.com/embed/IGJCx2ug0lU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=IGJCx2ug0lU"}
+          allowFullScreen
+          frameBorder={0}
+          title={"The video in background"}
+        />
+      </div>
+      );
+    let gif = (
+      <div className="video-foreground" id="vid-gif">
+        <img
+          src="/backgrounds/dogs.gif"
+          alt={"The video in background"}
+        />
+      </div>);
+    const md = new MobileDetect(window.navigator.userAgent);
+    if(md.is('iPhone'))
+      return gif;
+    else
+      return youtube;
+  }
+
   render() {
-    let youTubeString = "https://www.youtube.com/embed/IGJCx2ug0lU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=IGJCx2ug0lU";
     return (
       <div>
         <div className="video-background">
-          <div className="video-foreground">
-            <iframe
-              src={youTubeString}
-              allowFullScreen
-              frameBorder={0}
-              title={"The video in background"}
-            />
-          </div>
+          {SignInPage.GetBackgroundClip()}
         </div>
 
         <div id="vidtop-content">
