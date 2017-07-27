@@ -9,32 +9,6 @@ const responseGoogle = (response) => {
 };
 
 export default class SignInPage extends Component {
-  static GetBackgroundClip() {
-    let youtube = (
-      <div className="video-foreground" id="vid-yt">
-        <iframe
-          className="vid-yt"
-          src={"https://www.youtube.com/embed/IGJCx2ug0lU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=IGJCx2ug0lU"}
-          allowFullScreen
-          frameBorder={0}
-          title={"The video in background"}
-        />
-      </div>
-      );
-    let gif = (
-      <div className="video-foreground" id="vid-gif">
-        <img
-          src="./backgrounds/dogs.gif"
-          alt={"The video in background"}
-        />
-      </div>);
-    const md = new MobileDetect(window.navigator.userAgent);
-    if(md.is('iPhone'))
-      return gif;
-    else
-      return youtube;
-  }
-
   render() {
     return (
       <div>
@@ -58,6 +32,40 @@ export default class SignInPage extends Component {
             />
           </div>
         </div>
+      </div>
+    );
+  }
+
+  static GetBackgroundClip() {
+    const md = new MobileDetect(window.navigator.userAgent);
+    if(md.phone())
+      return this.GetGif();
+    if(md.tablet())
+      return this.GetGif();
+    else
+      return this.GetYoutube();
+  }
+
+  static GetGif() {
+    return (
+      <div className="video-foreground" id="vid-gif">
+        <img
+          src="./backgrounds/dogs.gif"
+          alt={"The video in background"}
+        />
+      </div>);
+  }
+
+  static GetYoutube() {
+    return (
+      <div className="video-foreground" id="vid-yt">
+        <iframe
+          className="vid-yt"
+          src={"https://www.youtube.com/embed/IGJCx2ug0lU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=IGJCx2ug0lU"}
+          allowFullScreen
+          frameBorder={0}
+          title={"The video in background"}
+        />
       </div>
     );
   }
