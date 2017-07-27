@@ -39,6 +39,7 @@
 
 .bm-menu-wrap {
   width: 200px !important;
+  z-index: 999;
 }
 
 /* Wrapper for item list */
