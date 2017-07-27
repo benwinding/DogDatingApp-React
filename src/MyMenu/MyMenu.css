@@ -25,14 +25,6 @@
   background: white;
 }
 
-.bm-cross-button {
-  right: 58px !important;
-}
-
-.bm-morph-shape {
-  right: 50px;
-}
-
 /* General sidebar styles */
 .bm-menu {
   padding: 2.5em 1em 0;
@@ -43,6 +35,10 @@
 .bm-morph-shape,
 .bm-menu {
   fill: #ccb93e;
+}
+
+.bm-menu-wrap {
+  width: 200px !important;
 }
 
 /* Wrapper for item list */
